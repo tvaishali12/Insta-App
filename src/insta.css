@@ -1,0 +1,163 @@
+.filter-1977 {
+  -webkit-filter: sepia(0.5) hue-rotate(-30deg) saturate(1.4);
+  filter: sepia(0.5) hue-rotate(-30deg) saturate(1.4);
+}
+.filter-aden {
+  -webkit-filter: sepia(0.2111) brightness(100) saturate(1.4);
+  filter: sepia(1.2222) brightness(1.15) saturate(1.4);
+}
+.filter-aden::before {
+  background: rgba(125, 105, 24, 0.1);
+  content: "";
+  mix-blend-mode: multiply;
+}
+.filter-amaro {
+  -webkit-filter: sepia(0.35) contrast(1.1) brightness(1.2) saturate(1.3);
+  filter: sepia(0.35) contrast(1.1) brightness(1.2) saturate(1.3);
+}
+.filter-amaro::before {
+  background: rgba(125, 105, 24, 0.2);
+  content: "";
+  mix-blend-mode: overlay;
+}
+.filter-ashby {
+  -webkit-filter: sepia(0.5) contrast(1.2) saturate(1.8);
+  filter: sepia(0.5) contrast(1.2) saturate(1.8);
+}
+.filter-ashby::before {
+  background: rgba(125, 105, 24, 0.35);
+  content: "";
+  mix-blend-mode: lighten;
+}
+.filter-brannan {
+  -webkit-filter: sepia(0.4) contrast(1.25) brightness(1.1) saturate(0.9)
+    hue-rotate(-2deg);
+  filter: sepia(0.4) contrast(1.25) brightness(1.1) saturate(0.9)
+    hue-rotate(-2deg);
+}
+.filter-brooklyn {
+  -webkit-filter: sepia(0.25) contrast(1.25) brightness(1.25) hue-rotate(5deg);
+  filter: sepia(0.25) contrast(1.25) brightness(1.25) hue-rotate(5deg);
+}
+.filter-brooklyn::before {
+  background: rgba(127, 187, 227, 0.2);
+  content: "";
+  mix-blend-mode: overlay;
+}
+.filter-charmes {
+  -webkit-filter: sepia(0.25) contrast(1.25) brightness(1.25) saturate(1.35)
+    hue-rotate(-5deg);
+  filter: sepia(0.25) contrast(1.25) brightness(1.25) saturate(1.35)
+    hue-rotate(-5deg);
+}
+.filter-charmes::before {
+  background: rgba(125, 105, 24, 0.25);
+  content: "";
+  mix-blend-mode: darken;
+}
+.filter-clarendon {
+  -webkit-filter: sepia(0.15) contrast(1.25) brightness(1.25) hue-rotate(5deg);
+  filter: sepia(0.15) contrast(1.25) brightness(1.25) hue-rotate(5deg);
+}
+.filter-clarendon::before {
+  background: rgba(127, 187, 227, 0.4);
+  content: "";
+  mix-blend-mode: overlay;
+}
+.filter-crema {
+  -webkit-filter: sepia(0.5) contrast(1.25) brightness(1.15) saturate(0.9)
+    hue-rotate(-2deg);
+  filter: sepia(0.5) contrast(1.25) brightness(1.15) saturate(0.9)
+    hue-rotate(-2deg);
+}
+.filter-crema::before {
+  background: rgba(125, 105, 24, 0.2);
+  content: "";
+  mix-blend-mode: multiply;
+}
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: fixed;
+  bottom: 0px;
+  left: 400px;
+  background-color: white;
+}
+
+.filter-item {
+  text-align: center;
+
+  cursor: pointer;
+}
+.filterBtn {
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  background: dodgerblue;
+  border-radius: 6px;
+  padding: 8px;
+  color: white;
+}
+.filter-grid.hidden {
+  display: none;
+}
+
+.filter-grid.visible {
+  display: grid;
+  top: 0px;
+  padding: 40.4px;
+  grid-column-gap: 17px;
+  grid-row-gap: 17px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 391px;
+  background-color: white;
+  border: "2px solid #000";
+}
+.btnDiv {
+  position: fixed;
+
+  top: 0px;
+  right: -423px;
+}
+.addCaption {
+  position: fixed;
+
+  left: 400px;
+  background: white;
+  padding-left: 23px;
+}
+.postDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputCaption {
+  border: none;
+  outline: none;
+}
+.textArea {
+  border: none;
+  outline: none;
+  height: 298px;
+  padding-top: 50px;
+  width: 334px;
+}
+.postBtn {
+  position: relative;
+  background-color: dodgerblue;
+  color: white;
+  top: -350px;
+  left: 271px;
+}
